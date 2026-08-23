@@ -1,0 +1,47 @@
+name: LangSmith evaluation
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      LANGSMITH_API_KEY: ${{ secrets.LANGSMITH_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      LANGSMITH_TRACING: "true"
+      LANGSMITH_ENDPOINT: https://eu.api.smith.langchain.com
+      LANGSMITH_PROJECT: paola-social-impact-agent-evals
+      LANGSMITH_DATASET: paola-social-impact-consulting-eval-v1
+      OPENAI_MODEL: gpt-5.4-mini
+
+    steps:
+      - name: Check out submission
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install project
+        run: pip install -e ".[dev]"
+
+      - name: Validate dataset and tests
+        run: |
+          python -m social_impact_eval.validate
+          pytest -q
+
+      - name: Upload dataset idempotently
+        run: python -m social_impact_eval.upload_dataset
+
+      - name: Run concise experiment
+        run: python -m social_impact_eval.run_experiment --variant concise
+
+      - name: Run evidence-first experiment
+        run: python -m social_impact_eval.run_experiment --variant evidence_first
