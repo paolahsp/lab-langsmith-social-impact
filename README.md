@@ -37,7 +37,7 @@ python -m social_impact_eval.run_experiment --variant evidence_first
 python -m social_impact_eval.run_experiment --variant concise
 ```
 
-The default LangSmith endpoint is the EU endpoint (`https://eu.api.smith.langchain.com`). Set `LANGSMITH_ENDPOINT=https://api.smith.langchain.com` to use the US region. The scripts print the dataset and experiment URLs returned by LangSmith; paste the final URLs into the placeholders below and add a screenshot under `results/screenshots/`.
+The default LangSmith endpoint is the standard US endpoint (`https://api.smith.langchain.com`), matching the configured workspace key. Set `LANGSMITH_ENDPOINT=https://eu.api.smith.langchain.com` only for a key issued by an EU LangSmith workspace. The scripts print the dataset and experiment identifiers returned by LangSmith.
 
 ## LangSmith artifacts
 
@@ -91,4 +91,3 @@ The dataset is synthetic and contains no personal or client data. Randomness is 
 - [LangSmith dataset management](https://docs.langchain.com/langsmith/manage-datasets-programmatically)
 - [LangSmith evaluation guide](https://docs.langchain.com/langsmith/evaluate-llm-application)
 - [LangSmith custom tracing](https://docs.langchain.com/langsmith/annotate-code)
-
