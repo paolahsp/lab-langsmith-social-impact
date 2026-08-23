@@ -1,0 +1,452 @@
+[
+  {
+    "category": "monitoring",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "easy",
+    "expected_decision": "proceed",
+    "id": "SI-001",
+    "output": {
+      "answer": "The youth mentoring program planned to enroll 120 participants by June.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "evaluation",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "clarify",
+    "id": "SI-002",
+    "output": {
+      "answer": "The employment program reports that 68% of participants found work within six months.",
+      "decision": "clarify",
+      "next_action": "Verify the missing evidence and document the result before making the claim."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "safeguarding",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "easy",
+    "expected_decision": "escalate",
+    "id": "SI-003",
+    "output": {
+      "answer": "During a community workshop, one participant reported repeated inappropriate messages from a volunteer facilitator.",
+      "decision": "escalate",
+      "next_action": "Pause the activity, preserve the evidence, and escalate to the responsible lead."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "privacy",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "escalate",
+    "id": "SI-004",
+    "output": {
+      "answer": "The fundraising team imported 2,400 donor email addresses from an event partner.",
+      "decision": "escalate",
+      "next_action": "Pause the activity, preserve the evidence, and escalate to the responsible lead."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "finance",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "clarify",
+    "id": "SI-005",
+    "output": {
+      "answer": "Training expenditure is shown as €48,000 against a €40,000 approved budget.",
+      "decision": "clarify",
+      "next_action": "Verify the missing evidence and document the result before making the claim."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "grant_compliance",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "easy",
+    "expected_decision": "proceed",
+    "id": "SI-006",
+    "output": {
+      "answer": "The grant requires 10 workshops, 200 unique participants, and a facilitator report by 30 September.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "inclusion",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "clarify",
+    "id": "SI-007",
+    "output": {
+      "answer": "The program served 640 people and reports 82% satisfaction.",
+      "decision": "clarify",
+      "next_action": "Verify the missing evidence and document the result before making the claim."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "finance",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "hard",
+    "expected_decision": "escalate",
+    "id": "SI-008",
+    "output": {
+      "answer": "Two invoices for €9,800 carry different invoice numbers but the same supplier, date, description, bank account, and supporting timesheet.",
+      "decision": "escalate",
+      "next_action": "Pause the activity, preserve the evidence, and escalate to the responsible lead."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "governance",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "easy",
+    "expected_decision": "proceed",
+    "id": "SI-009",
+    "output": {
+      "answer": "The bylaws require five voting directors for quorum.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "monitoring",
+    "consulting_quality": 1.0,
+    "decision_correctness": 0,
+    "difficulty": "hard",
+    "expected_decision": "clarify",
+    "id": "SI-010",
+    "output": {
+      "answer": "The new entrepreneurship program states that workshops will improve founder resilience, but its theory of change has no indicators, target values, data sources, or measurement schedule.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "safeguarding",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "escalate",
+    "id": "SI-011",
+    "output": {
+      "answer": "The project will begin school activities next Monday.",
+      "decision": "escalate",
+      "next_action": "Pause the activity, preserve the evidence, and escalate to the responsible lead."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "sustainability",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "proceed",
+    "id": "SI-012",
+    "output": {
+      "answer": "The food-distribution project claims a 14% reduction in delivery emissions.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "evaluation",
+    "consulting_quality": 1.0,
+    "decision_correctness": 0,
+    "difficulty": "hard",
+    "expected_decision": "clarify",
+    "id": "SI-013",
+    "output": {
+      "answer": "The pilot served 80 households.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "privacy",
+    "consulting_quality": 1.0,
+    "decision_correctness": 0,
+    "difficulty": "hard",
+    "expected_decision": "escalate",
+    "id": "SI-014",
+    "output": {
+      "answer": "The case-management vendor will host beneficiary records in the United States.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "evaluation",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "hard",
+    "expected_decision": "proceed",
+    "id": "SI-015",
+    "output": {
+      "answer": "A literacy program assessed 310 learners before and after a 12-week course.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "keyword_baseline"
+  },
+  {
+    "category": "monitoring",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "easy",
+    "expected_decision": "proceed",
+    "id": "SI-001",
+    "output": {
+      "answer": "The youth mentoring program planned to enroll 120 participants by June.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "evaluation",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "clarify",
+    "id": "SI-002",
+    "output": {
+      "answer": "The employment program reports that 68% of participants found work within six months.",
+      "decision": "clarify",
+      "next_action": "Verify the missing evidence and document the result before making the claim."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "safeguarding",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "easy",
+    "expected_decision": "escalate",
+    "id": "SI-003",
+    "output": {
+      "answer": "During a community workshop, one participant reported repeated inappropriate messages from a volunteer facilitator.",
+      "decision": "escalate",
+      "next_action": "Pause the activity, preserve the evidence, and escalate to the responsible lead."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "privacy",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "escalate",
+    "id": "SI-004",
+    "output": {
+      "answer": "The fundraising team imported 2,400 donor email addresses from an event partner.",
+      "decision": "escalate",
+      "next_action": "Pause the activity, preserve the evidence, and escalate to the responsible lead."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "finance",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "clarify",
+    "id": "SI-005",
+    "output": {
+      "answer": "Training expenditure is shown as €48,000 against a €40,000 approved budget.",
+      "decision": "clarify",
+      "next_action": "Verify the missing evidence and document the result before making the claim."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "grant_compliance",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "easy",
+    "expected_decision": "proceed",
+    "id": "SI-006",
+    "output": {
+      "answer": "The grant requires 10 workshops, 200 unique participants, and a facilitator report by 30 September.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "inclusion",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "clarify",
+    "id": "SI-007",
+    "output": {
+      "answer": "The program served 640 people and reports 82% satisfaction.",
+      "decision": "clarify",
+      "next_action": "Verify the missing evidence and document the result before making the claim."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "finance",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "hard",
+    "expected_decision": "escalate",
+    "id": "SI-008",
+    "output": {
+      "answer": "Two invoices for €9,800 carry different invoice numbers but the same supplier, date, description, bank account, and supporting timesheet.",
+      "decision": "escalate",
+      "next_action": "Pause the activity, preserve the evidence, and escalate to the responsible lead."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "governance",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "easy",
+    "expected_decision": "proceed",
+    "id": "SI-009",
+    "output": {
+      "answer": "The bylaws require five voting directors for quorum.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "monitoring",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "hard",
+    "expected_decision": "clarify",
+    "id": "SI-010",
+    "output": {
+      "answer": "The new entrepreneurship program states that workshops will improve founder resilience, but its theory of change has no indicators, target values, data sources, or measurement schedule.",
+      "decision": "clarify",
+      "next_action": "Verify the missing evidence and document the result before making the claim."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "safeguarding",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "escalate",
+    "id": "SI-011",
+    "output": {
+      "answer": "The project will begin school activities next Monday.",
+      "decision": "escalate",
+      "next_action": "Pause the activity, preserve the evidence, and escalate to the responsible lead."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "sustainability",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "medium",
+    "expected_decision": "proceed",
+    "id": "SI-012",
+    "output": {
+      "answer": "The food-distribution project claims a 14% reduction in delivery emissions.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "evaluation",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "hard",
+    "expected_decision": "clarify",
+    "id": "SI-013",
+    "output": {
+      "answer": "The pilot served 80 households.",
+      "decision": "clarify",
+      "next_action": "Verify the missing evidence and document the result before making the claim."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "privacy",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "hard",
+    "expected_decision": "escalate",
+    "id": "SI-014",
+    "output": {
+      "answer": "The case-management vendor will host beneficiary records in the United States.",
+      "decision": "escalate",
+      "next_action": "Pause the activity, preserve the evidence, and escalate to the responsible lead."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  },
+  {
+    "category": "evaluation",
+    "consulting_quality": 1.0,
+    "decision_correctness": 1,
+    "difficulty": "hard",
+    "expected_decision": "proceed",
+    "id": "SI-015",
+    "output": {
+      "answer": "A literacy program assessed 310 learners before and after a 12-week course.",
+      "decision": "proceed",
+      "next_action": "Document the cited evidence and approve the next controlled step."
+    },
+    "quality_comment": "grounding=1.00; actionability=1.00; format=1.00",
+    "variant": "risk_aware"
+  }
+]

@@ -1,0 +1,202 @@
+{
+  "dataset_name": "paola-social-impact-consulting-eval-v1",
+  "description": "Fifteen synthetic, evidence-grounded consulting decisions for social-impact programs; evaluates routing, grounded explanations, and operational next actions.",
+  "schema_version": "1.0",
+  "examples": [
+    {
+      "id": "SI-001",
+      "inputs": {
+        "brief": "The youth mentoring program planned to enroll 120 participants by June. It enrolled 132, 119 attended at least four sessions, and the approved monitoring protocol defines four sessions as active participation. Attendance records are complete.",
+        "question": "Can we report that the enrollment target was achieved?"
+      },
+      "outputs": {
+        "decision": "proceed",
+        "answer": "Yes. Enrollment reached 132 against a target of 120 by June, and the attendance records are complete.",
+        "next_action": "Document the 132 enrollments and separately report 119 active participants using the approved four-session definition."
+      },
+      "metadata": {"category": "monitoring", "difficulty": "easy", "source": "SRC-01", "evidence_terms": ["132", "120", "June"]}
+    },
+    {
+      "id": "SI-002",
+      "inputs": {
+        "brief": "The employment program reports that 68% of participants found work within six months. No baseline or comparison-group employment rate was collected, and the funder asks for evidence of contribution rather than a simple outcome count.",
+        "question": "Can we claim the program caused the employment result?"
+      },
+      "outputs": {
+        "decision": "clarify",
+        "answer": "No causal claim is supported: the 68% outcome has neither a baseline nor a comparison group, while the funder asks for contribution evidence.",
+        "next_action": "Frame 68% as an observed outcome and collect baseline or credible comparison evidence before making a contribution or causal claim."
+      },
+      "metadata": {"category": "evaluation", "difficulty": "medium", "source": "SRC-02", "evidence_terms": ["68%", "baseline", "comparison"]}
+    },
+    {
+      "id": "SI-003",
+      "inputs": {
+        "brief": "During a community workshop, one participant reported repeated inappropriate messages from a volunteer facilitator. The safeguarding policy requires immediate suspension of direct contact and referral to the designated safeguarding lead within 24 hours.",
+        "question": "Should the program manager wait for more evidence before acting?"
+      },
+      "outputs": {
+        "decision": "escalate",
+        "answer": "No. The report triggers the safeguarding policy; waiting would conflict with the required immediate suspension and 24-hour referral.",
+        "next_action": "Pause the facilitator's direct contact immediately, preserve the report, and escalate to the safeguarding lead within 24 hours."
+      },
+      "metadata": {"category": "safeguarding", "difficulty": "easy", "source": "SRC-03", "evidence_terms": ["24 hours", "suspension", "safeguarding"]}
+    },
+    {
+      "id": "SI-004",
+      "inputs": {
+        "brief": "The fundraising team imported 2,400 donor email addresses from an event partner. The partner notice covered event logistics only; it did not cover fundraising messages, and no separate consent record exists.",
+        "question": "Can the team start the fundraising email campaign?"
+      },
+      "outputs": {
+        "decision": "escalate",
+        "answer": "Not yet. The 2,400 addresses were collected under an event-logistics notice, with no fundraising coverage or separate consent record.",
+        "next_action": "Pause the campaign and obtain privacy review of the lawful basis and notice before using or retaining the addresses for fundraising."
+      },
+      "metadata": {"category": "privacy", "difficulty": "medium", "source": "SRC-04", "evidence_terms": ["2,400", "event logistics", "consent"]}
+    },
+    {
+      "id": "SI-005",
+      "inputs": {
+        "brief": "Training expenditure is shown as €48,000 against a €40,000 approved budget. The finance lead says €6,000 may have been coded to the wrong cost centre, but the ledger has not yet been reconciled.",
+        "question": "Should we report an €8,000 overspend to the donor now?"
+      },
+      "outputs": {
+        "decision": "clarify",
+        "answer": "The apparent variance is €8,000, but €6,000 may be miscoded and the ledger is unreconciled, so the final overspend is not yet reliable.",
+        "next_action": "Reconcile the ledger and verify the €6,000 coding before confirming the amount and following the donor's variance-notification rule."
+      },
+      "metadata": {"category": "finance", "difficulty": "medium", "source": "SRC-05", "evidence_terms": ["€48,000", "€40,000", "€6,000"]}
+    },
+    {
+      "id": "SI-006",
+      "inputs": {
+        "brief": "The grant requires 10 workshops, 200 unique participants, and a facilitator report by 30 September. The program delivered 11 workshops to 218 unique participants, and the signed facilitator report was submitted on 24 September.",
+        "question": "Was the grant milestone completed?"
+      },
+      "outputs": {
+        "decision": "proceed",
+        "answer": "Yes. All three conditions were met: 11 workshops, 218 unique participants, and a signed report submitted before 30 September.",
+        "next_action": "Approve the milestone evidence pack with attendance de-duplication, workshop records, and the 24 September report receipt."
+      },
+      "metadata": {"category": "grant_compliance", "difficulty": "easy", "source": "SRC-06", "evidence_terms": ["11", "218", "24 September"]}
+    },
+    {
+      "id": "SI-007",
+      "inputs": {
+        "brief": "The program served 640 people and reports 82% satisfaction. Satisfaction data is not disaggregated by disability status, even though disability inclusion is an explicit program objective and 17% of registrants self-identified as having a disability.",
+        "question": "Can we conclude the program was equally satisfactory for participants with disabilities?"
+      },
+      "outputs": {
+        "decision": "clarify",
+        "answer": "No. Overall satisfaction is 82%, but the data is not disaggregated by disability status, so equal experience cannot be assessed.",
+        "next_action": "Disaggregate satisfaction results with appropriate privacy safeguards and verify representation of the 17% who self-identified as having a disability."
+      },
+      "metadata": {"category": "inclusion", "difficulty": "medium", "source": "SRC-07", "evidence_terms": ["82%", "17%", "disaggregated"]}
+    },
+    {
+      "id": "SI-008",
+      "inputs": {
+        "brief": "Two invoices for €9,800 carry different invoice numbers but the same supplier, date, description, bank account, and supporting timesheet. Both were paid. The financial-control policy requires suspected duplicate payments to be frozen and investigated.",
+        "question": "Can the second payment be treated as valid because its invoice number differs?"
+      },
+      "outputs": {
+        "decision": "escalate",
+        "answer": "No. A different invoice number does not outweigh the identical €9,800 supplier, date, description, bank account, and timesheet evidence.",
+        "next_action": "Freeze further payments to the supplier, preserve both payment records, and escalate a suspected duplicate-payment investigation."
+      },
+      "metadata": {"category": "finance", "difficulty": "hard", "source": "SRC-08", "evidence_terms": ["€9,800", "same supplier", "timesheet"]}
+    },
+    {
+      "id": "SI-009",
+      "inputs": {
+        "brief": "The bylaws require five voting directors for quorum. Six voting directors attended the meeting, declared conflicts before the vote, and the conflict register and minutes were signed.",
+        "question": "Can the board resolution be recorded as quorate based on this brief?"
+      },
+      "outputs": {
+        "decision": "proceed",
+        "answer": "Yes. Six voting directors attended against a quorum requirement of five, with conflicts declared and records signed.",
+        "next_action": "Record the resolution with the signed minutes, attendance list, and conflict register in the governance file."
+      },
+      "metadata": {"category": "governance", "difficulty": "easy", "source": "SRC-09", "evidence_terms": ["five", "six", "signed"]}
+    },
+    {
+      "id": "SI-010",
+      "inputs": {
+        "brief": "The new entrepreneurship program states that workshops will improve founder resilience, but its theory of change has no indicators, target values, data sources, or measurement schedule.",
+        "question": "Is the monitoring design ready for launch?"
+      },
+      "outputs": {
+        "decision": "clarify",
+        "answer": "No. The intended resilience outcome is stated, but there are no indicators, targets, sources, or measurement schedule to test it.",
+        "next_action": "Define an operational resilience indicator, baseline, target, data source, owner, and measurement schedule before launch."
+      },
+      "metadata": {"category": "monitoring", "difficulty": "hard", "source": "SRC-10", "evidence_terms": ["resilience", "indicators", "schedule"]}
+    },
+    {
+      "id": "SI-011",
+      "inputs": {
+        "brief": "The project will begin school activities next Monday. Four of twelve facilitators who will have direct contact with children have not completed the mandatory child-protection training required before any contact.",
+        "question": "May all facilitators begin while the remaining training is scheduled?"
+      },
+      "outputs": {
+        "decision": "escalate",
+        "answer": "No. Four of twelve direct-contact facilitators lack mandatory child-protection training that must be completed before any contact.",
+        "next_action": "Remove the four untrained facilitators from child contact, verify completion records, and escalate readiness to the safeguarding lead before Monday."
+      },
+      "metadata": {"category": "safeguarding", "difficulty": "medium", "source": "SRC-11", "evidence_terms": ["four", "twelve", "before any contact"]}
+    },
+    {
+      "id": "SI-012",
+      "inputs": {
+        "brief": "The food-distribution project claims a 14% reduction in delivery emissions. A third-party analyst verified fuel records, route distance, vehicle type, and the calculation method for the same twelve-month reporting period.",
+        "question": "Is the emissions claim sufficiently supported for the report?"
+      },
+      "outputs": {
+        "decision": "proceed",
+        "answer": "Yes. The 14% claim is supported by third-party verification of the relevant activity data and method for the same twelve-month period.",
+        "next_action": "Publish the claim with the reporting boundary, calculation method, period, and third-party verification reference."
+      },
+      "metadata": {"category": "sustainability", "difficulty": "medium", "source": "SRC-12", "evidence_terms": ["14%", "third-party", "twelve-month"]}
+    },
+    {
+      "id": "SI-013",
+      "inputs": {
+        "brief": "The pilot served 80 households. Only four households answered the voluntary feedback survey, all recruited by the delivery coordinator from the final distribution day; all four rated the service highly.",
+        "question": "Can we report that beneficiaries were highly satisfied overall?"
+      },
+      "outputs": {
+        "decision": "clarify",
+        "answer": "Not as an overall conclusion. Only four of 80 households responded, and coordinator recruitment from one day creates strong selection risk.",
+        "next_action": "Report the four responses descriptively and collect a broader, independently recruited sample before generalizing satisfaction."
+      },
+      "metadata": {"category": "evaluation", "difficulty": "hard", "source": "SRC-13", "evidence_terms": ["four", "80", "final distribution day"]}
+    },
+    {
+      "id": "SI-014",
+      "inputs": {
+        "brief": "The case-management vendor will host beneficiary records in the United States. The security review is complete, but the data-processing agreement is not signed and the transfer mechanism has not been approved by counsel.",
+        "question": "Can production beneficiary data be migrated now?"
+      },
+      "outputs": {
+        "decision": "escalate",
+        "answer": "No. Security review alone is insufficient because the data-processing agreement is unsigned and the international transfer mechanism lacks approval.",
+        "next_action": "Pause migration, sign the data-processing agreement, and obtain counsel's approval of the transfer mechanism before production data moves."
+      },
+      "metadata": {"category": "privacy", "difficulty": "hard", "source": "SRC-14", "evidence_terms": ["United States", "not signed", "transfer mechanism"]}
+    },
+    {
+      "id": "SI-015",
+      "inputs": {
+        "brief": "A literacy program assessed 310 learners before and after a 12-week course. The same validated test was used both times; 287 learners completed both assessments and the mean score increased from 51 to 67. The analysis reports attrition separately.",
+        "question": "Can the report state that assessed learners improved during the course?"
+      },
+      "outputs": {
+        "decision": "proceed",
+        "answer": "Yes, for the 287 matched learners: mean scores increased from 51 to 67 over the 12-week course, with attrition separately reported.",
+        "next_action": "Report the matched-sample improvement and attrition transparently without converting the pre-post result into an unsupported causal claim."
+      },
+      "metadata": {"category": "evaluation", "difficulty": "hard", "source": "SRC-15", "evidence_terms": ["287", "51", "67"]}
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "failures": [
+    {
+      "actual": "proceed",
+      "category": "monitoring",
+      "difficulty": "hard",
+      "expected": "clarify",
+      "id": "SI-010",
+      "variant": "keyword_baseline"
+    },
+    {
+      "actual": "proceed",
+      "category": "evaluation",
+      "difficulty": "hard",
+      "expected": "clarify",
+      "id": "SI-013",
+      "variant": "keyword_baseline"
+    },
+    {
+      "actual": "proceed",
+      "category": "privacy",
+      "difficulty": "hard",
+      "expected": "escalate",
+      "id": "SI-014",
+      "variant": "keyword_baseline"
+    }
+  ],
+  "overall": {
+    "decision_accuracy": 0.9,
+    "mean_consulting_quality": 1.0,
+    "n": 30,
+    "pass_rate": 0.9
+  },
+  "segments": {
+    "category:evaluation": {
+      "decision_accuracy": 0.833,
+      "mean_consulting_quality": 1.0,
+      "n": 6,
+      "pass_rate": 0.833
+    },
+    "category:finance": {
+      "decision_accuracy": 1.0,
+      "mean_consulting_quality": 1.0,
+      "n": 4,
+      "pass_rate": 1.0
+    },
+    "category:governance": {
+      "decision_accuracy": 1.0,
+      "mean_consulting_quality": 1.0,
+      "n": 2,
+      "pass_rate": 1.0
+    },
+    "category:grant_compliance": {
+      "decision_accuracy": 1.0,
+      "mean_consulting_quality": 1.0,
+      "n": 2,
+      "pass_rate": 1.0
+    },
+    "category:inclusion": {
+      "decision_accuracy": 1.0,
+      "mean_consulting_quality": 1.0,
+      "n": 2,
+      "pass_rate": 1.0
+    },
+    "category:monitoring": {
+      "decision_accuracy": 0.75,
+      "mean_consulting_quality": 1.0,
+      "n": 4,
+      "pass_rate": 0.75
+    },
+    "category:privacy": {
+      "decision_accuracy": 0.75,
+      "mean_consulting_quality": 1.0,
+      "n": 4,
+      "pass_rate": 0.75
+    },
+    "category:safeguarding": {
+      "decision_accuracy": 1.0,
+      "mean_consulting_quality": 1.0,
+      "n": 4,
+      "pass_rate": 1.0
+    },
+    "category:sustainability": {
+      "decision_accuracy": 1.0,
+      "mean_consulting_quality": 1.0,
+      "n": 2,
+      "pass_rate": 1.0
+    },
+    "difficulty:easy": {
+      "decision_accuracy": 1.0,
+      "mean_consulting_quality": 1.0,
+      "n": 8,
+      "pass_rate": 1.0
+    },
+    "difficulty:hard": {
+      "decision_accuracy": 0.7,
+      "mean_consulting_quality": 1.0,
+      "n": 10,
+      "pass_rate": 0.7
+    },
+    "difficulty:medium": {
+      "decision_accuracy": 1.0,
+      "mean_consulting_quality": 1.0,
+      "n": 12,
+      "pass_rate": 1.0
+    },
+    "variant:keyword_baseline": {
+      "decision_accuracy": 0.8,
+      "mean_consulting_quality": 1.0,
+      "n": 15,
+      "pass_rate": 0.8
+    },
+    "variant:risk_aware": {
+      "decision_accuracy": 1.0,
+      "mean_consulting_quality": 1.0,
+      "n": 15,
+      "pass_rate": 1.0
+    }
+  }
+}
