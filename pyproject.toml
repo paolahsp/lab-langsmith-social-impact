@@ -10,7 +10,7 @@ requires-python = ">=3.10"
 dependencies = [
   "langsmith>=0.8.16,<1",
   "openai>=1.61.1,<3",
-  "openevals>=0.2.1,<0.3",
+  "openevals>=0.2.0,<0.3",
 ]
 
 [project.optional-dependencies]
@@ -26,4 +26,3 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 target-version = "py310"
-
